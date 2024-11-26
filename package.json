@@ -1,0 +1,12 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch './main.sass' './css/style.css'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
