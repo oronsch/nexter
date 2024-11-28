@@ -14,4 +14,35 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
-h1{color: red;}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 60vh auto repeat(3, min-content);
+    grid-template-columns: 8rem  minmax(6rem ,1fr) repeat(8, minmax(min-content, 14rem))  minmax(6rem, 1fr) ;
+
+    
+    grid-template-columns:[sidebar-start] 8rem [sidebar-end full-start] minmax(6rem ,1fr) [center-start] repeat(8,
+    [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+}
+
+
