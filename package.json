@@ -7,7 +7,7 @@
     "watch": "sass --watch './main.sass' './css/style.css'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oron sch",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.81.0"
